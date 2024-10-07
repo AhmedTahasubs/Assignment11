@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar-example">
+  <nav class="navbar navbar-expand-lg py-4">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <div class="text-light logo">
+          <img src="./images/logo.png" class="" alt="">
+          <div class="">
+            <h1>Weather</h1>
+            <p>tagline goes here</p>
+          </div>
+        </div>
+      </a>
+      <button class="navbar-toggler bg-info" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">Live Cameras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">Photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="hero" id="home" style="background-image: url(./images/banner.png);">
+    <div class="container">
+      <div class="position-relative">
+        <input type="text" id="search" placeholder="Find your location..." class="w-100 search-input rounded-pill">
+        <button class="btn btn-primary rounded-pill find">Find</button>
+      </div>
+    </div>
+  </div>
+  <div class="hero" style="background-color: #1e202b;">
+  <!-- here is the container    -->
+   <div class="container weather">
+    <div class="row row-cols-md-3 gx-0">
+      <div class="cols flex-grow-0">
+        <div class="first-day first-corner">
+          <div class="d-flex justify-content-between align-items-center days">
+            <p id="today-name"></p>
+            <p><span id="today-num"></span> <span id="month"></span></p>
+          </div>
+          <div class="city p-4">
+            <h4 class="fs-6" id="today-location"></h4>
+            <p class="degree"><span id="today-temp"></span><sup>o</sup>C</p>
+            <div><img id="today-png" class="w-25" alt=""></div>
+            <p class="text-info" id="today-info"></p>
+            <div class="d-flex justify-content-start opacity-75">
+                <p class="me-4"><i class="fa-solid fa-umbrella"></i> <span id="humidity"></span>%</p>
+                <p class="me-4"><i class="fa-solid fa-wind"></i> <span id="wind-speed"></span>km/h</p>
+                <p class="me-4"><i class="fa-solid fa-compass"></i> <span id="wind-direction"></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cols">
+        <div class="second-day h-100">
+          <div class="d-flex justify-content-center days">
+            <p class="tom-day"></p>
+          </div>
+          <div class="city p-4 text-center d-flex justify-content-center align-items-center flex-column">
+            <div><img src="" class="tompng" alt=""></div>
+            <br>
+            <p class="fs-3 fw-bolder text-white"><span class="tom-temp-max"></span><sup>o</sup>C</p>
+            <p><span class="tom-temp-min"></span><sup>o</sup></p>
+            <p class="text-info tom-text">clear</p>
+          </div>
+        </div>
+      </div>
+      <div class="cols">
+        <div class="first-day h-100 second-corner">
+          <div class="d-flex justify-content-center days">
+            <p class="tom-day"></p>
+          </div>
+          <div class="city p-4 text-center d-flex justify-content-center align-items-center flex-column">
+            <div><img src="" class="tompng" alt=""></div>
+            <br>
+            <p class="fs-3 fw-bolder text-white"><span class="tom-temp-max"></span><sup>o</sup>C</p>
+            <p class=""><span class="tom-temp-min"></span><sup>o</sup></p>
+            <p class="text-info tom-text">clear</p>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+   </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="row ">
+        <div class="position-relative col-md-8">
+          <input type="text" placeholder="Enter your email to subscribe..." class="w-100 subscribe-input rounded-pill">
+          <button class="btn btn-primary rounded-pill subscribe-btn">Subscribe</button>
+        </div>
+        <div class="col-md-3 offset-md-1">
+          <div class="social-links d-flex ">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+      <p class="text-light my-4 fw-light">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+html{
+    --all-color:#;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+.max-width-500{
+    max-width: 500px;
+}
+.navbar{
+    background-color: #1e202b;
+}
+.logo img{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.logo div{
+    margin-top: 15px;
+    line-height: 0px;
+    display: inline-block;
+    vertical-align: middle;
+}
+h1{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.logo div p{
+    font-size: 10px;
+    opacity: .8;
+}
+.navbar-nav .nav-link{
+    display:inline;
+    font-size: 14px;
+    padding-inline: 30px !important;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    margin-inline: 5px;
+    padding-block: 4px;
+}
+.navbar-nav .nav-link:hover{
+   border-color:  #009ad8;
+    color: #009ad8 !important;
+}
+.hero{
+    padding: 70px 0;
+    min-height: 300px;
+    background-position: center;
+    background-size: cover;
+}
+.search-input{
+    padding: 20px 50px 20px 20px;
+    background-color: #1e202b;
+    border: none;
+    color: white;
+    outline: none;
+}
+.find{
+    padding:15px;
+    font-size: 14px;
+    background-color: #009ad8;
+    padding-inline: 50px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
+}
+.footer{
+    min-height: 200px;
+    background-color: #262936;
+    padding: 50px 0;
+}
+.subscribe-input{
+    padding: 20px 100px 20px 20px;
+    background-color: #1e202b;
+    border: none;
+    color: white;
+    outline: none;
+}
+.subscribe-btn{
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #009ad8;
+    position: absolute;
+    right: 18px;
+    top: 5px;
+    bottom: 5px;
+}
+.social-links a{
+    margin-top: 9px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #1e202b;
+    color: #009ad8;
+    transition: 0.3s ease;
+    text-align: center;
+    margin-right: 5px;
+}
+.social-links a:hover{
+    background: #009ad8;
+    color: white;
+}
+.social-links a i{
+    font-size: 18px;
+    transform: translateY(50%);
+}
+.footer .container p{
+    font-size: .9rem;
+}
+
+.weather{
+    margin-top: -200px;
+}
+
+.first-day , .second-day
+{
+    background-color: #323544;
+    color: rgba(255, 255, 255, 0.8);
+}
+.first-day .days , .second-day .days{
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px 10px 0px 10px;
+}
+.first-day .city p.degree{
+    font-size: 4.2rem;
+    color: white;
+    font-weight: 700;
+    transform: scaleY(1.2);
+}
+.second-day{
+    background-color: #262936;
+}
+.first-corner{
+    border-radius: 5px 5px 0 0;
+}
+.second-corner{
+    border-radius: 0 0 5px 5px;
+}
+
+@media (min-width: 768px){
+    .first-corner{
+        border-radius: 5px 0 0 5px;
+    }
+    .second-corner{
+        border-radius: 0 5px 5px 0;
+    }
+}
+
+
