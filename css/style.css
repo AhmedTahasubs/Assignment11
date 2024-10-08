@@ -1,7 +1,6 @@
 html{
     --all-color:#;
 }
-
 body{
     font-family: "Roboto", sans-serif;
 }
@@ -109,11 +108,9 @@ h1{
 .footer .container p{
     font-size: .9rem;
 }
-
 .weather{
     margin-top: -200px;
 }
-
 .first-day , .second-day
 {
     background-color: #323544;
@@ -138,7 +135,6 @@ h1{
 .second-corner{
     border-radius: 0 0 5px 5px;
 }
-
 @media (min-width: 768px){
     .first-corner{
         border-radius: 5px 0 0 5px;
